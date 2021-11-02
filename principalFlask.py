@@ -18,6 +18,11 @@ def metodoPython():
 def metodoHtml():
     return "<h1>prueba de formato html</h1>"
 
+@aplicacion.route('/conHtmlSiPlantilla')
+def metodoHtml2():
+    return render_template('prueba.html')
+
+
 @aplicacion.route('/concepto')
 def conceptoS():
     elconcepto=request.args.get('laVariable1')
