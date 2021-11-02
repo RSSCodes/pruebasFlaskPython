@@ -14,6 +14,10 @@ def metodoMartes():
 def metodoPython():
     return "es un lenguaje de programacion"
 
+@aplicacion.route('/conHtmlNoPlantilla')
+def metodoHtml():
+    return "<h1>prueba de formato html</h1>"
+
 @aplicacion.route('/concepto')
 def conceptoS():
     elconcepto=request.args.get('laVariable1')
